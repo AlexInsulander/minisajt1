@@ -3,13 +3,7 @@
   margin: 0;
 }
 
-main {
-  background-image: url(csgo-background-img1.jpg),
-    url(800px_COLOURBOX4544512.jpg);
-  background-size: contain;
-  height: 2000px;
-  background-repeat: no-repeat;
-}
+
 
 nav {
   display: flex;
@@ -21,12 +15,14 @@ nav {
   justify-content: center;
   flex: 100%;
   height: 60px;
+  background-color: black;
+  align-items: center;
+
 }
 
 .menu {
   list-style: none;
   display: flex;
-  background-color: black;
   height: 100%;
   width: 100%;
   align-items: center;
@@ -117,13 +113,12 @@ nav a {
 }
 
 .newscontainer {
-  margin-top: 40%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.news1 {
+.csgo-news {
   display: flex;
   width: 30%;
   height: 75%;
@@ -131,31 +126,142 @@ nav a {
   transition: 0.2s;
 }
 
-.news2 {
-  display: flex;
-  width: 30%;
-  height: 75%;
-  flex-direction: column;
-  transition: 0.2s;
-}
-
-.news1:hover {
+.csgo-news:hover {
   transform: scale(1.1);
 }
 
-.news2:hover {
-  transform: scale(1.1);
+
+.newsimg {
+  width: 100%;
+  margin-top: -10%;
 }
 
-.newsimg1 {
+.backgroundimg1 {
   width: 100%;
 }
 
-.newsimg2 {
+.backgroundimg2 {
+  margin-top: -4px;
   width: 100%;
+  background-image: url(800px_COLOURBOX4544512.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 19%;
 }
 
-.newstext1 {
+
+.backgroundimg3 {
+  background-image: url(mWykZSJecB36fMpon6qzSX.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  padding-bottom: 3%;
+  align-items: center;
+}
+
+.skins-text{
+  font-family: "IBM Plex Sans", sans-serif;
   color: white;
-  font-size: 20px;
+  width: 20%;
+  text-align: center;
+  padding-top: 3.5%;
+  margin-left: 70%;
+  font-size: 4vw;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(17, 17, 17);
+  flex-direction: column;
+
+}
+
+.footer-list-text {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+
+}
+
+.footer-text {
+  text-decoration: none;
+  list-style: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: rgb(170, 170, 170);
+  font-size: 1vw;
+}
+
+.footer-list-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  flex: 0;
+  margin-bottom: 10%;
+}
+
+.footer-icons {
+  text-decoration: none;
+  list-style: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: rgb(170, 170, 170);
+  font-size: 1vw;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#mobile-menu-icon {
+  margin-left: auto; /* gör att hamburgerikonen ligger så långt till höger som möjligt*/
+  margin-right: 20px;
+  display: none;
+  color: white;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  #mobile-menu-icon {
+    display: block;
+  }
+
+  .menu .button {
+    display: none; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .newscontainer {
+    flex-direction: column;
+  }
+  
+  .csgo-news {
+    width: 100%;
+  }
+
+  .newsimg {
+    margin-top: 0;
+    margin-top: 5%;
+  }
+
+  .backgroundimg2 {
+    padding-bottom: 0;
+    background-image: none;
+  
+    }
+
+  .backgroundimg3 {
+    margin-top: 5%;
+  }
+
+  .footer-list-text {
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  .footer-text {
+    font-size: 3vw;
+
+  }
+
+  .footer-icons {
+    font-size: 2vw;
+  }
 }

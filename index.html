@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4b39a549d2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/47f4bdeced.js" crossorigin="anonymous"></script>
+
     <title>Csgo</title>
   </head>
   <body>
@@ -16,10 +17,8 @@
       <nav>
         <div class="title">
           <ul class="menu menu-left">
-            <li class="menu-item-logo">
-              <img class="logo" src="Csgo.jpg" /></a>
-            </li>
-            <li class="menu-item"><img class="CS-GO" src="Counter-strike.jpg"></li>
+            <a href="index.html"><li class="menu-item-logo"><img class="logo" src="Csgo.jpg"/></li></a>
+            <a href="index.html"><li class="menu-item"><img class="CS-GO" src="Counter-strike.jpg"></li></a>
             <a class="button" href="#"><li class="menu-item news">News</li></a>
             <a class="button" href="#"><li class="menu-item shop">Shop</li></a>
             <a class="button" href="#"><li class="menu-item help">Help</li></a>
@@ -27,23 +26,46 @@
           <ul class="menu menu-right"> 
             <a class="button" href="#"><li class="menu-item push-right search"><i class="fas fa-search"></i></li></a>
             <a class="button" href="#"><li class="menu-item push-right globe"><i class="fas fa-globe"></i></li></a>
-            <a class="button" href="#"><li class="menu-item push-right log-in"><i class="fas fa-user-circle"></i>Log in</li></a>
+            <a class="button" href="login.html"><li class="menu-item push-right log-in"><i class="fas fa-user-circle"></i>Log in</li></a>
             <a class="button" href="#"><li class="menu-item push-right play-now">Play now</li></a>
           </ul>
+          <i id="mobile-menu-icon" class="fas fa-bars"></i>
         </div>
       </nav>
     </header>
     <main class="main">
-      <img src="csgo-backgroundimg1.jpg" alt="">
-      <div class="newscontainer">
-        <div class="news1">
-          <img class="csgo-newsimg newsimg1" src="bf_blog_image.jpg">
+      <img class="backgroundimg1" src="csgo-background-img1.jpg">
+      <div class="backgroundimg2">
+        <div class="newscontainer">
+          <div class="csgo-news">
+            <img class="newsimg" src="bf_blog_image.jpg">
+          </div>
+          <div class="csgo-news">
+            <img class="newsimg" src="dreams_blog.jpg">
+          </div>
         </div>
-        <div class="news2">
-          <img class="csgo-newsimg newsimg2" src="dreams_blog.jpg">
+      </div>
+      <div class="backgroundimg3">
+        <div class="skins-text">
+          Introducing all new charachter skins
         </div>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <ul class="footer-list-text">
+        <a class="footer-text" href="#"><li class="footer-text">Learn more about us</li></a>
+        <a class="footer-text" href="#"><li class="footer-text">Help us improve</li></a>
+        <a class="footer-text" href="#"><li class="footer-text">Support</li></a>
+        <a class="footer-text" href="#"><li class="footer-text">Contact us</li></a>
+        <a class="footer-text" href="#"><li class="footer-text">Esport</li></a>
+      </ul>
+      <ul class="footer-list-icons">
+        <a class="footer-icons" href="#"><li class="footer-icons"></li><i class="fab fa-youtube"></i></li></a>
+        <a class="footer-icons" href="#"><li class="footer-icons"><i class="fab fa-twitter"></i></li></a>
+        <a class="footer-icons" href="#"><li class="footer-icons"><i class="fab fa-instagram"></i></li></a>
+        <a class="footer-icons" href="#"><li class="footer-icons"><i class="fab fa-reddit"></i></li></a>
+        <a class="footer-icons" href="#"><li class="footer-icons"><i class="fab fa-facebook"></i></li></a>
+      </ul>
+    </footer>
   </body>
 </html>
